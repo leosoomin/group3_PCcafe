@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="745.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foods.main.Controller">
+   <children>
+      <HBox layoutX="24.0" layoutY="14.0" prefHeight="35.0" prefWidth="475.0">
+         <children>
+            <Button fx:id="Button1" alignment="CENTER" mnemonicParsing="false" onAction="#hotdogFunc" prefHeight="35.0" prefWidth="95.0" text="핫도그" />
+            <Button fx:id="Button2" alignment="CENTER" mnemonicParsing="false" onAction="#noodleFunc" prefHeight="35.0" prefWidth="95.0" text="라면" />
+            <Button fx:id="Button3" alignment="CENTER" mnemonicParsing="false" onAction="#riceFunc" prefHeight="35.0" prefWidth="95.0" text="식사" />
+            <Button fx:id="Button4" alignment="CENTER" mnemonicParsing="false" onAction="#burgerFunc" prefHeight="35.0" prefWidth="95.0" text="햄버거" />
+            <Button fx:id="Button5" alignment="CENTER" mnemonicParsing="false" onAction="#cafeFunc" prefHeight="35.0" prefWidth="98.0" text="카페" />
+         </children>
+      </HBox>
+      <ImageView fx:id="imageView1" fitHeight="150.0" fitWidth="244.0" layoutX="24.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageView2" fitHeight="150.0" fitWidth="244.0" layoutX="266.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageView3" fitHeight="150.0" fitWidth="244.0" layoutX="30.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageView4" fitHeight="150.0" fitWidth="244.0" layoutX="266.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageView5" fitHeight="150.0" fitWidth="244.0" layoutX="24.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageView6" fitHeight="150.0" fitWidth="244.0" layoutX="266.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="TextField1" alignment="CENTER" editable="false" layoutX="24.0" layoutY="214.0" onMouseClicked="#click1" prefHeight="41.0" prefWidth="244.0" />
+      <TextField fx:id="TextField2" alignment="CENTER" editable="false" layoutX="266.0" layoutY="214.0" onMouseClicked="#click2" prefHeight="41.0" prefWidth="244.0" />
+      <TextField fx:id="TextField3" alignment="CENTER" editable="false" layoutX="24.0" layoutY="420.0" onMouseClicked="#click3" prefHeight="41.0" prefWidth="244.0" />
+      <TextField fx:id="TextField4" alignment="CENTER" editable="false" layoutX="266.0" layoutY="420.0" onMouseClicked="#click4" prefHeight="41.0" prefWidth="244.0" />
+      <TextField fx:id="TextField5" alignment="CENTER" editable="false" layoutX="24.0" layoutY="620.0" onMouseClicked="#click5" prefHeight="41.0" prefWidth="244.0" />
+      <TextField fx:id="TextField6" alignment="CENTER" editable="false" layoutX="266.0" layoutY="620.0" onMouseClicked="#click6" prefHeight="41.0" prefWidth="244.0" />
+      <Button fx:id="Button6" layoutX="657.0" layoutY="21.0" mnemonicParsing="false" onAction="#listFunc" text="주문내역보기" />
+      <HBox layoutX="523.0" layoutY="370.0" prefHeight="35.0" prefWidth="172.0">
+         <children>
+            <Button fx:id="Button8" mnemonicParsing="false" onAction="#cardFunc" prefHeight="30.0" prefWidth="85.0" text="카드" />
+            <Button fx:id="Button7" mnemonicParsing="false" onAction="#moneyFunc" prefHeight="30.0" prefWidth="85.0" text="현금" />
+         </children>
+      </HBox>
+      <HBox layoutX="523.0" layoutY="423.0" prefHeight="49.0" prefWidth="244.0">
+         <children>
+            <RadioButton fx:id="RadioButton1" mnemonicParsing="false" onMouseClicked="#money1Func" text="5만원">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="RadioButton2" mnemonicParsing="false" onMouseClicked="#money2Func" text="1만원" toggleGroup="$group" />
+            <RadioButton fx:id="RadioButton3" mnemonicParsing="false" onMouseClicked="#money3Func" text="5천원" toggleGroup="$group" />
+            <RadioButton fx:id="RadioButton4" mnemonicParsing="false" onAction="#money4Func" onMouseClicked="#money4Func" text="금액에맞게" toggleGroup="$group" />
+         </children>
+      </HBox>
+      <Button fx:id="Button9" layoutX="523.0" layoutY="482.0" mnemonicParsing="false" onAction="#payFunc" prefHeight="22.0" prefWidth="172.0" text="결제" />
+      <TextArea fx:id="TextArea1" editable="false" layoutX="523.0" layoutY="55.0" prefHeight="253.0" prefWidth="222.0" />
+      <TextField fx:id="TextField7" editable="false" layoutX="584.0" layoutY="315.0" />
+      <TextArea fx:id="TextArea2" editable="false" layoutX="523.0" layoutY="511.0" prefHeight="116.0" prefWidth="230.0" />
+   </children>
+</AnchorPane>

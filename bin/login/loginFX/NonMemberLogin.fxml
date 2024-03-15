@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.nonMember.NonMemberController">
+   <children>
+      <Label layoutX="160.0" layoutY="14.0" prefHeight="66.0" prefWidth="285.0" text="비회원 로그인">
+         <font>
+            <Font name="Yu Gothic UI Semilight" size="45.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="325.0" prefHeight="50.0" prefWidth="600.0" spacing="50.0">
+         <children>
+            <Button fx:id="MoveToLogin" mnemonicParsing="false" onAction="#MTLFunc" prefHeight="46.0" prefWidth="98.0" text="회원 로그인" />
+            <Button fx:id="NMChargeTimeFunc" mnemonicParsing="false" onAction="#NMCTimeFunc" prefHeight="46.0" prefWidth="98.0" text="시간 충전" />
+         </children>
+      </HBox>
+      <GridPane layoutX="44.0" layoutY="137.0" prefHeight="89.0" prefWidth="526.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="NonMemName" alignment="CENTER_RIGHT" prefHeight="297.0" prefWidth="413.0" text="mm" />
+            <Label prefHeight="266.0" prefWidth="371.0" text=" 님 환영합니다." GridPane.columnIndex="1" />
+            <Label prefHeight="218.0" prefWidth="469.0" text=" 번 PC에 접속하셨습니다." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="NonMemNumber" alignment="CENTER_RIGHT" prefHeight="297.0" prefWidth="413.0" text="00" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Label layoutX="197.0" layoutY="248.0" text="시간을 충전해주세요">
+         <font>
+            <Font name="Yu Gothic UI Semilight" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
